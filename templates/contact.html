@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman';
+            box-sizing: border-box;
+            background-color: #000;
+        }
+        *{
+            font-family: 'Times New Roman';
+        }
+        section{
+            padding: 50px 15px;
+        
+        }
+        .contact{
+            /* background: #101010; */
+            margin-left:300px;
+            height: 100%;
+            width: 100%;
+            min-height:100vh ;
+            display: grid;
+            grid-template-columns: repeat(2,2fr);
+            align-items: center;
+            grid-gap: 6rem;
+        
+        }
+        .contact-img img{
+            max-width: 100%;
+            width:720px;
+            height: auto;
+            border-radius: 10px;
+            padding-bottom: 25px;
+        
+        }
+        .contact-form h1{
+            font-size: 80px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        span{
+            color: #f9004d;
+        
+        }
+        .contact-form p{
+            color: #c6c9d8bf;
+            letter-spacing: 1px;
+            line-height: 26px;
+            font-size: 1.1rem;
+            margin-bottom: 3.8rem;
+        
+        }
+        .contact-form form{
+            position: relative;
+        
+        }
+        .contact-form form input,
+        form textarea{
+            width: 100%;
+            padding: 17px;
+            border: none;
+            outline: none;
+            background:#191919 ;
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: .7rem;
+            border-radius: 10px;
+        }
+        .contact-form textarea{
+            resize: none;
+            height: 200px;
+        }
+        .contact-form form .btn2{
+            display: inline-block;
+            background:#f9004d;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            width: 220px;
+            transition: ease .20s;
+            cursor: pointer;
+        }
+        .contact-form form .btn2:hover{
+            border: 2px solid #f9004d ;
+            background: transparent;
+            transform: scale(1.1);
+        
+        }
+        @media(max-width:1570px){
+            section{
+                padding: 80px 3%;
+                transition: .2s;
+            }
+            .contact-form h1{
+                font-size: 60px;
+            }
+            .contact-form p{
+                margin-bottom: 3rem;
+            }
+        
+        }
+        @media(max-width:1090px){
+            .contact{
+                grid-gap: 2rem;
+                transition: .3s;
+        
+            }
+        }
+        @media(max-width:1000px){
+            .contact{
+                grid-template-columns: 1fr;
+            }
+            .contact-form{
+                order: 2;
+            }
+            .contact-img img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+        
+
+        .navbar {
+            width: 1200px;
+            height: 75px;
+            margin: auto;
+        }
+
+        .icon {
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+        /* #ff7200  */
+
+        .logo {
+            color: #f9004d;
+            font-size: 30px;
+            font-family: Arial;
+            padding-left: 20px;
+            float: left;
+            padding-top: 10px;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+
+        .menu {
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #f9004d;
+        }
+
+        .search {
+            width: 330px;
+            float: left;
+            margin-left: 270px;
+        }
+        a.active{
+color: #f9004d;
+}
+
+        .srch {
+            font-family: 'Times New Roman';
+            width: 200px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #f9004d;
+            margin-top: 13px;
+            color: #fff;
+            border-right: none;
+            font-size: 16px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            background: #f9004d;
+            border: 2px solid #f9004d;
+            margin-top: 13px;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: #000;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .srch:focus {
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">MechAnic</h2>
+            
+
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/service">SERVICE</a></li>
+                <li><a href="/blog">Blogs</a></li>
+                <li><a href="/contact" class="active">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type To text">
+            <a href="#"> <button class="btn">Search</button></a>
+        </div>
+        <!-- Web Design & <br><span>Development</span> <br>Course</h1> -->
+    </div>
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Contact<span> Us</span></h1>
+            <p>Mechanic are available 24/7 for your ease.Contact us for the best service experience, our aim is "once a member always a member". </p>
+            <form action="">
+                {% csrf_token %}
+                <input type="" placeholder="Your Name" required>
+                <input type="email" name="email" id="" placeholder="E-mail" required>
+                <input type="" placeholder="Write a subject" required >
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" name="" value="Submit" class="btn2">
+
+            </form>    
+
+        </div>
+        <div class="contact-img">
+            <img src="static/mechapp/images/8.png" alt="">
+        </div>
+    </section> 
+
+
+</body>
+
+</html>
